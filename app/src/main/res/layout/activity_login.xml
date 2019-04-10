@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_login"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/text_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_layout_vertical"
+        android:text="Quiz"
+        android:fontFamily="@font/sniper"
+        android:textColor="@color/colorBackground"
+        android:textSize="150sp" />
+
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_logo"
+        android:layout_marginLeft="@dimen/margin_layout_vertical"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="@dimen/margin_layout_vertical"
+        android:backgroundTint="@color/colorBackground"
+        android:freezesText="true"
+        android:hint="@string/text_full_name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textColor="@color/colorBackground"
+        android:textColorHint="#ba68c8"
+        android:textSize="@dimen/default_size" />
+
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_name"
+        android:layout_marginLeft="@dimen/margin_layout_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/margin_layout_vertical"
+        android:spinnerMode="dropdown" />
+
+    <View
+        android:id="@+id/view_below_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/spinner_category"
+        android:layout_marginLeft="@dimen/margin_layout_vertical"
+        android:layout_marginRight="@dimen/margin_layout_vertical"
+        android:background="@color/colorBackground" />
+
+
+    <Button
+        android:id="@+id/button_start"
+        style="@style/btnStyle"
+        android:layout_below="@id/view_below_spinner"
+        android:layout_marginTop="100dp"
+        android:text="@string/button_start" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar_load"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

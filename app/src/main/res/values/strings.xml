@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="text_name">Name :</string>
+    <string name="text_category">Category :</string>
+    <string name="button_start">Start</string>
+    <string name="button_next">Next</string>
+    <string name="text_score">Score :</string>
+    <string name="text_full_name">write your name</string>
+    <string name="button_play_again">Play again</string>
+    <string name="text_question_number">questionNumber</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_layout_vertical">40dp</dimen>
+    <dimen name="margin_parent_layout_vertical">80dp</dimen>
+    <dimen name="default_size">20sp</dimen>
+</resources>

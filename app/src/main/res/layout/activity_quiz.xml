@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_quiz"
+    android:padding="8dp"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/questions_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="-- Question Number --"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/default_size" />
+
+    <TextView
+        android:id="@+id/text_question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questions_n"
+        android:layout_centerHorizontal="true"
+        android:freezesText="true"
+        android:textColor="@color/color_text"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/text_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_question_number"
+        android:layout_marginLeft="@dimen/default_size"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="@dimen/default_size"
+        android:background="@color/colorBackground"
+        android:freezesText="true"
+        android:gravity="center"
+        android:lines="5"
+        android:scrollbars="vertical"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/default_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_question"
+        android:layout_marginLeft="@dimen/default_size"
+        android:layout_marginRight="@dimen/default_size"
+        android:background="@color/colorPrimary" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_question"
+        android:layout_marginStart="@dimen/default_size"
+        android:layout_marginLeft="@dimen/default_size"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp">
+
+        <RadioButton
+            android:id="@+id/radio_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/default_size" />
+
+        <RadioButton
+            android:id="@+id/radio_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/default_size" />
+
+        <RadioButton
+            android:id="@+id/radio_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/default_size" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_Next"
+        style="@style/btnStyle"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="70dp"
+        android:freezesText="true"
+        android:text="@string/button_next" />
+
+
+</RelativeLayout>

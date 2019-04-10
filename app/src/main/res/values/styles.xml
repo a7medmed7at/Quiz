@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+    </style>
+
+
+
+    <style name="btnStyle" parent="RtlUnderlay.Widget.AppCompat.ActionButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/btn_round</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:layout_marginRight">@dimen/margin_parent_layout_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/margin_parent_layout_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.3</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">fill_vertical</item>
+        <item name="android:textSize">@dimen/default_size</item>
+    </style>
+
+
+
+
+
+</resources>

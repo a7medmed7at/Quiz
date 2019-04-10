@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_quiz"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:lines="1"
+        android:scrollbars="horizontal"
+        android:text="--  --"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/default_size" />
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_name"
+        android:layout_centerInParent="true"
+        android:lines="1"
+        android:textSize="250sp" />
+
+
+    <Button
+        android:id="@+id/button_play_again"
+        style="@style/btnStyle"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/text_score"
+        android:text="@string/button_play_again" />
+
+
+</RelativeLayout>
