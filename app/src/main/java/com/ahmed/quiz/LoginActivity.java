@@ -78,6 +78,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         disableProgressBar();
     }
 
+
+
     @NonNull
     @Override
     public Loader<Cursor> onCreateLoader(int i, @Nullable Bundle bundle) {
